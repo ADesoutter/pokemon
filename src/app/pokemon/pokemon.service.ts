@@ -24,7 +24,7 @@ export class PokemonService {
 
   updatePokemon(pokemon: Pokemon): Observable<null> {
     const httpOptions = {
-      headers: new HttpHeaders({ 'Content-type': 'application/json' })
+      headers: new HttpHeaders({ 'Content-Type': 'application/json' })
     };
 
     return this.http.put('api/pokemons', pokemon, httpOptions).pipe(
